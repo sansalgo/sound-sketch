@@ -40,7 +40,7 @@ const getStrokeColor = (
 const App: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const audioContextRef = useRef<AudioContext | null>(null);
-  const playbackTimeoutRef = useRef<number>();
+  const playbackTimeoutRef = useRef<number>(null);
   const [isDrawing, setIsDrawing] = useState(false);
   const [composition, setComposition] = useState<Stroke[]>([]);
   const [isPlaying, setIsPlaying] = useState(false);
