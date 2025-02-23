@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# 🎵 Sound Sketch – Draw with Sound ✍️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Sound Sketch** is a creative web app where users can "draw" musical notes on a canvas. Each stroke represents a unique sound, with customizable instruments, scales, and notes. Once drawn, users can playback their sketch and listen to their musical creation.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🎨 **Canvas-based drawing** – Draw strokes that generate musical notes.
+- 🎵 **Sound playback** – Play and stop the generated music.
+- 🎛 **Customizable sounds**:
+  - **Instrument types**: Sine Wave, Square Wave, Sawtooth, Triangle
+  - **Musical scales**: Major, Minor, Pentatonic, Chromatic
+  - **Root notes**: C, C#, D, D#, ... B
+- 🎚 **Adjustable Volume & Tempo** – Control how the music plays.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Framework**: Vite + React
+- **Styling**: Tailwind CSS (shadcn)
+- **Language**: TypeScript
+- **Audio Processing**: Web Audio API
+- **Package Manager**: pnpm
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/sansalgo/sound-sketch.git
+   cd sound-sketch
+   ```
+2. **Install dependencies**
+   ```bash
+   pnpm install
+   ```
+3. **Run the app**
+   ```bash
+   pnpm run dev
+   ```
+4. Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## 🧪 Testing
+
+To run tests:
+
+```bash
+pnpm test
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🎮 How to Use
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+1. **Draw on the canvas** – Each stroke generates a sound.
+2. **Select your sound settings** – Choose an instrument, scale, and root note.
+3. **Adjust volume & tempo** – Fine-tune your sound.
+4. **Playback your music** – Hit the play button to listen!
+5. **Clear the canvas** – Start fresh with the "Clear" button.
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 🎨 Screenshot
+
+![Sound Sketch Screenshot](screenshot.png)
+
+## 📜 License
+
+This project is licensed under the MIT License.
