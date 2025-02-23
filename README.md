@@ -1,5 +1,7 @@
 # 🎵 Sound Sketch – Draw with Sound ✍️
 
+**Live Preview:** [🔗 Sound Sketch](https://sound-sketch.netlify.app/)
+
 **Sound Sketch** is a creative web app where users can "draw" musical notes on a canvas. Each stroke represents a unique sound, with customizable instruments, scales, and notes. Once drawn, users can playback their sketch and listen to their musical creation.
 
 ## 🚀 Features
